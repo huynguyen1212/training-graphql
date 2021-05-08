@@ -6,7 +6,7 @@ const cors = require('cors')
 require("dotenv").config();
 
 const app = express();
-mongoose.connect(process.env.DB_URL, {
+mongoose.connect("mongodb+srv://huynq:huynq1212@cluster0.gckii.mongodb.net/graphql-demo?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
